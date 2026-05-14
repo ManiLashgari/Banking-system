@@ -10,6 +10,3 @@ class Account:
         self.date = date.today()
         self.is_active = is_active
         self.owner = owner
-
-
-# changes -> staged changes -> commit
