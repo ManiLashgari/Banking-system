@@ -17,3 +17,13 @@ class Account:
             return f"Transaction is done successfully.\nCurrent balance: {self.balance}"
         else:
             return "Your account is inactive!"
+
+    def withdraw(self, amount: str):
+        if self.is_active:
+            if float(amount) <= float(self.balance):
+                self.balance = int(self.balance) - int(amount)
+                return f"Transaction is done successfully.\nCurrent balance: {self.balance}"
+            else:
+                return "ERROR! Not enough balance"
+        else:
+            return "Your account is inactive!"
