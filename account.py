@@ -30,3 +30,11 @@ class Account:
     
     def get_balance(self):
         return f"Current balance: {self.balance}"
+    
+    def get_info(self):
+        if self.is_active:
+            active = "ACTIVE"
+        else:
+            active = "INACTIVE"
+        return f"Account's information\nAccount owner: {self.owner}\nAccount ID: {self.account_id}\n\
+                Current balance: {self.balance}\nDate: {self.date}\nThe account is {active}"
