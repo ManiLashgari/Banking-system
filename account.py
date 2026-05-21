@@ -38,3 +38,12 @@ class Account:
             active = "INACTIVE"
         return f"Account's information\nAccount owner: {self.owner}\nAccount ID: {self.account_id}\n\
                 Current balance: {self.balance}\nDate: {self.date}\nThe account is {active}"
+    
+    def activation(self, active_mode: bool):
+        self.is_active = active_mode
+        if active_mode:
+            active = "activated"
+        else:
+            active = "deactivated"
+        return f"Your account has been successfully {active}"
+    
