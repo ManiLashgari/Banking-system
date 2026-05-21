@@ -27,3 +27,6 @@ class Account:
                 return "ERROR! Not enough balance"
         else:
             return "Your account is inactive!"
+    
+    def get_balance(self):
+        return f"Current balance: {self.balance}"
