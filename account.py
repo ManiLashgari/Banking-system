@@ -10,3 +10,10 @@ class Account:
         self.date = date.today()
         self.is_active = is_active
         self.owner = owner
+
+    def deposit(self, amount: str):
+        if self.is_active:
+            self.balance = int(self.balance) + int(amount)
+            return f"Transaction is done successfully.\nCurrent balance: {self.balance}"
+        else:
+            return "Your account is inactive!"
