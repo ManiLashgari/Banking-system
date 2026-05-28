@@ -37,7 +37,7 @@ class Account:
         else:
             active = "INACTIVE"
         return f"Account's information\nAccount owner: {self.owner}\nAccount ID: {self.account_id}\n\
-                Current balance: {self.balance}\nDate: {self.date}\nThe account is {active}"
+Current balance: {self.balance}\nDate: {self.date}\nThe account is {active}"
     
     def activation(self, active_mode: bool):
         self.is_active = active_mode
