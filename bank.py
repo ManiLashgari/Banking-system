@@ -2,11 +2,19 @@ class Bank:
     """
     Represents a bank.
     """
-    def __init__(self, name, customers_list, total_balance, branches_list=None):
+    def __init__(self, name: str, customers_list=None, branches_list=None):
         self.name = name
-        self.customers_list = customers_list
-        self.total_balance = total_balance
+
+        if customers_list is None:
+            self.customers_list = []
+        else:
+            self.customers_list = customers_list
+
         if branches_list is None:
             self.branches_list = []
         else:
             self.branches_list = branches_list
+
+    def add_branch(self, branch: Branch) -> None:
+        """Add a new branch to the branchs list"""
+        self.branches_list.append(branch)
