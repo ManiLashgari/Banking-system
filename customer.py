@@ -19,7 +19,7 @@ class Customer:
         """
         Creat an account.
         """
-        self.accounts_list.append(Account(self.name).get_info())
+        self.accounts_list.append(Account(self.name))
 
     def get_accounts_list(self) -> list:
         """
