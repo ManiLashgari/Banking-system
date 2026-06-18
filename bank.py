@@ -7,13 +7,8 @@ class Bank:
     """
     Represents a bank.
     """
-    def __init__(self, name: str, customers_list=None, branches_list=None):
+    def __init__(self, name: str, branches_list=None):
         self.name = name
-
-        if customers_list is None:
-            self.customers_list = []
-        else:
-            self.customers_list = customers_list
 
         if branches_list is None:
             self.branches_list = []
