@@ -1,5 +1,5 @@
 """
-Customer.py
+customer.py
 """
 from account import Account
 
@@ -31,3 +31,7 @@ class Customer:
         """
         Displaying the balance of accounts.
         """
+        total = 0
+        for account in self.accounts_list:
+            total += int(account.balance)
+        return str(total)
