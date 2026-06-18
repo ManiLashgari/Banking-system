@@ -1,5 +1,5 @@
 """
-Customer.py
+customer.py
 """
 from account import Account
 

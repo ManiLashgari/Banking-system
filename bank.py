@@ -1,3 +1,8 @@
+"""
+bank.py
+"""
+from customer import Customer
+
 class Bank:
     """
     Represents a bank.
@@ -17,12 +22,18 @@ class Bank:
 
     def add_branch(self, branch: Branch) -> None:
         """
-        Add a new branch to the branchs list
+        Add a new branch to the branchs list.
         """
         self.branches_list.append(branch)
 
     def get_branches(self) -> list:
         """
-        Return branches list
+        Return branches list.
         """
         return self.branches_list
+
+    def find_account(self, account_id : str) -> Customer:
+        """
+        Return an account.
+        """
+        return Customer.get_accounts_list(account_id)
