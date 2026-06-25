@@ -2,6 +2,7 @@
 bank.py
 """
 from customer import Customer
+from branch import Branch
 
 class Bank:
     """
