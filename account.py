@@ -47,7 +47,7 @@ class Account:
         """
         return f"Current balance: {self.balance}"
 
-    def get_info(self):
+    def get_info(self) -> str:
         """
         Displaying the information of account.
         """
